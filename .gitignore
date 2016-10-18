@@ -204,7 +204,6 @@ TSWLatexianTemp*
 
 # auto folder when using emacs and auctex 
 /auto/*
-<<<<<<< HEAD
 
 
 ### Linux ###
@@ -272,4 +271,3 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 =======
->>>>>>> 5d3bfdd84b26a7677a2433f2edff3a966bfda28d
