@@ -1,5 +1,7 @@
+*.orig
 
-# Created by https://www.gitignore.io/api/latex,linux,macos,windows
+
+# Created by https://www.gitignore.io/api/latex,macos,linux,windows,vim
 
 ### SolidWorks ###
 *~$*.SQLPART
@@ -25,7 +27,7 @@
 # *.ps
 # *.eps
 # *.pdf
-
+Q
 ## Generated if empty string is given at "Please type another file name for output:"
 .pdf
 
@@ -202,6 +204,7 @@ TSWLatexianTemp*
 
 # auto folder when using emacs and auctex 
 /auto/*
+<<<<<<< HEAD
 
 
 ### Linux ###
@@ -268,3 +271,5 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+=======
+>>>>>>> 5d3bfdd84b26a7677a2433f2edff3a966bfda28d
