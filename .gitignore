@@ -1,5 +1,5 @@
 *.orig
-
+*.soc
 
 # Created by https://www.gitignore.io/api/latex,macos,linux,windows,vim
 
