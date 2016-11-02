@@ -12,14 +12,18 @@
 \usepackage[utf8]{inputenc}
 \usepackage{indentfirst}
 \usepackage{nicefrac}
+\usepackage[dvipsnames]{xcolor}
 
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
 \MakeOuterQuote{"}
 \renewcommand{\baselinestretch}{1.15}
 \setlength\parindent{0.5in}
 \setlength\RaggedRightParindent{\parindent}
 \setlength\parskip{1em}
 \let\supscr=\textsuperscript
-
+\newcommand{\graytext}[1]{{\leavevmode\color{gray}#1}}
 
 \begin{document}
 \begin{titlepage}
@@ -34,48 +38,66 @@
     \vfill
 \end{titlepage}
 
-\section{Introduction}
-A food desert is an area where access to fruits and vegetables is limited, too expensive, or
-nonexistent due to a lack of grocery stores and farmers markets within a convenient walking
-distance \cite{cdc-food-deserts}. People living in food deserts often rely on fringe food retailers
-and discount stores, such as gas stations and dollar stores, for food. These retailers tend to sell
-high-fat and processed foods which contributes to higher rates of obesity and diabetes in those food
-desert areas. According to the US Department of Agriculture, there is a food desert in the Wheat
-Ridge area located between Wadsworth, 32\supscr{nd} Avenue, and 38\supscr{th} Avenue
-\cite{usda-food-deserts}.
+\tableofcontents
 
-The team’s goal is to empower English and Spanish speaking Wheat Ridge residents over 65 years in
-age who live in a food desert and rely on food stamps to utilize a self-sustaining plant growing
-system. Most of the system will come prepackaged for safe installation and use and will partially
-use materials that can be sourced in the Wheat Ridge neighborhood. The net cost will be neutral or
-better after two years of plant harvest and will include features that consider the potential
-physical limitations of the stakeholders.
+\graytext{
+    \pagebreak
+    \section{Introduction}
+    A food desert is an area where access to fruits and vegetables is limited, too expensive, or
+    nonexistent due to a lack of grocery stores and farmers markets within a convenient walking
+    distance \cite{cdc-food-deserts}. People living in food deserts often rely on fringe food
+    retailers and discount stores, such as gas stations and dollar stores, for food. These retailers
+    tend to sell high-fat and processed foods which contributes to higher rates of obesity and
+    diabetes in those food desert areas. According to the US Department of Agriculture, there is a
+    food desert in the Wheat Ridge area located between Wadsworth, 32\supscr{nd} Avenue, and
+    38\supscr{th} Avenue \cite{usda-food-deserts}.
 
-\section{Solution Description}
-The team’s design addresses the problem with a system composed of five distinct and interconnected
-subsystems. The structural subsystem involves a three-tiered structure that is compact, lightweight,
-and cost-effective, so that the stakeholder can easily install and maintain it. With it’s 12 hole
-design and the reservoir at it’s base, the structure is the key connection between the hydroponic
-soda bottle system and the watering system. Furthermore,  the watering system consists of two
-symbiotic subsystems: the reservoir and the cascading water system.  The reservoir system uses four
-separate water tanks, which correspond to each growing stage in the plant cycle. The water is
-delivered to each plant by pumping water to the bottles in the top tier of the structure; the water
-then cascades down to the next two rows through tubing that connects the bottles together and
-finally returns back to the reservoir. This system only requires the stakeholder to refill the
-reservoirs one time per week. The nutrient subsystem is housed partially within the reservoir.
-Along with the structure and watering system, the stakeholder will receive packages of pre-measured
-nutrients that correspond to the growing cycle of the plants. Using a color-coding system, the
-stakeholder simply has to fill the reservoirs with the nutrients and water, which will then be
-delivered to the plants via the water delivery system. Finally, the hydroponic (soilless) soda
-bottle system is composed of re-purposed 2-liter soda bottles and materials that can easily be
-sourced in the Wheat Ridge food desert. The soda bottles are the foundation for the snow peas,
-lettuce, and spinach to grow. The water-nutrient mixture is pumped into the bottles and is carried
-to the plant via a wick. This design prevents the stakeholder from overwatering and underwatering
-the plants and lowers the cost of the entire system by using easily-sourced substrate in lieu of
-soil. The final solution also includes a tool which will allow the stakeholders to easily construct
-the bottle systems themselves despite their physical limitations. These five interconnected
-subsystems comprise our final solution: an elegant, easy-to-maintain food growing system designed
-with the stakeholders’ needs in mind.
+    The team’s goal is to empower English and Spanish speaking Wheat Ridge residents over 65 years
+    in age who live in a food desert and rely on food stamps to utilize a self-sustaining plant
+    growing system. Most of the system will come prepackaged for safe installation and use. It will
+    also partially use materials that can be sourced in the Wheat Ridge neighborhood. The net cost
+    will be neutral or better after two years of plant harvest and will include features that
+    consider the potential physical limitations of the stakeholders.
+
+    \section{Solution Description}
+    The team’s design addresses the problem with a system composed of five distinct and
+    interconnected subsystems. The structural subsystem is a three-tiered structure that is compact,
+    lightweight, and cost-effective so that the stakeholder can easily install and maintain it. With
+    it’s 12 hole design and the reservoir at it’s base, the structure is the key connection between
+    the hydroponic soda bottle system and the watering system. 
+
+    The watering system consists of two symbiotic subsystems: the reservoir and the cascading water
+    system. The reservoir system uses four separate water tanks each of which correspond a growing
+    stage in the plant cycle. The water is delivered to each plant by pumping water to the bottles
+    in the top tier of the structure; the water then cascades down to the next two rows through
+    tubing that connects the bottles together. Water drains from the lowest bottle back into the
+    reservoir. This system only requires the stakeholder to refill the reservoirs one time per week.
+
+    The nutrient subsystem is housed partially within the reservoir. Along with the structure and
+    watering system, the stakeholder will receive packages of pre-measured nutrients that correspond
+    to the growing cycle of the plants. By using a color-coding system, the nutrient system will be
+    easy to understand regardless of the stakeholder’s native language. The stakeholder simply has
+    to fill the reservoirs with the nutrients and water which will then be delivered to the plants
+    via the water delivery system.
+
+    Finally, the hydroponic (soilless) soda bottle system is composed of re-purposed 2-liter soda
+    bottles and materials that can easily be sourced in the Wheat Ridge food desert. We chose a
+    hydroponics system because they use up to 90\% less water, so they can be watered less often and
+    are typified by less insects, a more controlled environment, and a steady harvest
+    \cite{j-camas}. The soda bottles are the foundation for the snow peas, lettuce, and spinach to
+    grow. The water-nutrient mixture is pumped into the bottles and is carried to the plant via a
+    wick. This design prevents the stakeholder from overwatering and underwatering the plants and
+    lowers the cost of the entire system by using easily-sourced substrate instead of soil.  The
+    final solution also includes a tool which will allow the stakeholders to easily construct the
+    bottle systems themselves despite their physical limitations. These five interconnected
+    subsystems comprise our final solution: an elegant, easy-to-maintain food growing system
+    designed with the stakeholders’ needs in mind.
+}
+
+% ===== TODO =====
+% - Check that the figure numbers are correct
+% - Do a search for stakeholder
+% - Do a search for subsystem
 
 \section{Subsystem Description}
 
@@ -83,6 +105,25 @@ with the stakeholders’ needs in mind.
 % - Physical properties, including dimensions, material type, specifications, weight, and
 %   construction.
 %       - Include sketches with dimensions instead of long physical descriptions.
+
+The water delivery subsystem is the sole mechanism for transporting nutrients and water from the
+reservoir to the soda bottles. This subsystem is critical to the overall system because if water and
+nutrients cannot be delivered to the bottles, the plants cannot grow and thus no food can be
+produced. The water delivery subsystem is comprised of four separate water circulation systems, one
+for each nutrient stage. This will help facilitate our modular design. Each circulation system
+corresponds to a single column of bottles and distributes water to each bottle in the column (see
+Figure 3).  Because we are using a wicking mechanism to transport water and nutrients from the
+bottom of the bottle to the plant, the circulation system does not have to run continuously, it
+merely needs to maintain the water level in each bottle. Because of this, the pumps will be on a
+timer which will allow the water to run for a few minutes every hour.
+
+The most important 
+
+A successful water delivery subsystem will successfully interface with both the reservoir and the
+bottles without any issues. For those interfaces to be successful, all connections must be
+watertight. The water delivery subsystem must also deliver the correct amount of water to each
+bottle. Additionally, these interfaces must be simple enough that our stakeholders can setup and
+configure them without issues.
 
 The water delivery subsystem transports water from the reservoirs to the top set of bottles and from
 the top bottles to the lower bottles. The three major components of the water delivery are as
@@ -112,9 +153,7 @@ The water must be pumped out of the reservoir through the ceiling of the reservo
 point is the boundary of the water delivery subsystem. The connection at this interface point must
 be watertight.
 
-
 % - Bottle connection
-
 
 
 \section{Subsystem Analysis}
@@ -125,6 +164,7 @@ be watertight.
 
 \section{Summary}
 
+% THIS SHOULD BE THE FOCUS
 % - Given your research, stakeholder feedback and/or testing, what are your recommendations for
 %   design iterations and design implementation into the final, full-scale, production solution?
 
@@ -150,6 +190,13 @@ be watertight.
     Available:
     \url{http://www.ers.usda.gov/data-products/food-access-research-atlas/go-to-the-atlas.aspx}.
     [Accessed: 28 Oct. 2016].
+
+    \bibitem{j-camas}
+    J. Camas (04 Sept. 2014).
+    \textit{Home Hydroponics} [Online].
+    Available:
+    \url{http://www.epicurious.com/archive/blogs/editor/2014/09/home-hydroponics-easy-tips-for-growing-fresh-produce-all-year.html}.
+    [Accessed: Nov. 2, 2016].
 
 \end{thebibliography}
 
