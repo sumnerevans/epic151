@@ -118,13 +118,18 @@ and nutrients are not delivered to the bottles, the plants cannot grow and no fo
 The water delivery subsystem is comprised of four separate water circulation systems, one for each
 nutrient stage. This helps facilitate the system's modular design. Each circulation system
 corresponds to a single column of bottles and distributes water to each bottle in the column (see
-Figure 1). Because we are using a wicking mechanism to transport water and nutrients from the bottom
-of the bottle to the plant, the circulation system does not have to run continuously, it merely
-needs to maintain the water level in each bottle. Because of this, our design requires the pumps to
-be on a timer which allows the water to run for a few minutes every hour.
+Figure 1).
 
-Since many of the water delivery system's components are interfaces with other subsystems, the only
-component of the design is specific to the water deliver system: the tubing. The tubing carries
+Since we are using a wicking mechanism to transport water and nutrients from the bottom of the
+bottle to the plant, the circulation system does not have to run continuously, it merely needs to
+maintain the water level in each bottle. Because of this, the design requires the pumps to be on a
+timer which allows the water to run for a few minutes every hour. This solution decreases the
+environmental footprint of the system and also reduces operating costs for the stakeholder.
+Additionally, if there is a power outage and the pumps stop operating for a period of time, the
+system will remain stable until the water in the individual bottles runs out.
+
+Because many of the water delivery system's components are interfaces with other subsystems, the
+only component of the design specific to the water deliver system is the tubing. The tubing carries
 water and nutrients from each of the four reservoirs to the uppermost bottle. The tubing also
 carries water from one bottle to the next in each column until the water drains out of the lowest
 bottle in the column and back into the reservoir through another tube. In the final design,
@@ -146,26 +151,32 @@ $\nicefrac{1}{2}"$ tubing will be used. This diameter was chosen for two reasons
 % Include sketches with dimensions instead of long physical descriptions.
 
 The tubing in the final product will be black to reduce the water's exposure to light. Exposure to
-light causes algae growth \cite{doe-washington}. Since the team's goal is to prevent any algae
-growth, this precaution is necessary.
+light causes algae growth \cite{doe-washington} and since one of the system's requirements is that
+algae growth is prevented, this precaution is necessary.
 
-As shown in Figure 2, there is a total of 3 feet of tubing between the pump and the uppermost
-bottle. $7'\ \nicefrac{3}{4}''$ of the tubing is inside the reservoir and $2'\ 4\ \nicefrac{1}{4}''$
-is outside the reservoir. Between each bottle is $1\ \nicefrac{1}{2}'$ of tubing ($\nicefrac{1}{2}'$
-horizontally and $1'$ vertically).
+As shown in Figure 2, there is a total of $3'$ of tubing between the pump and the uppermost bottle.
+$7\ \nicefrac{3}{4}''$ of the tubing is inside the reservoir and $2'\ 4\ \nicefrac{1}{4}''$ is
+outside the reservoir. Figure 3 shows that there is a total of $1\ \nicefrac{1}{2}'$ of tubing
+between each bottle: $\nicefrac{1}{2}'$ horizontally and $1'$ vertically.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=163mm]{resources/tubing-pump-to-bottle.png}
+    \caption{Dimensions of Tubing from Pump to Bottle}
+\end{figure}
 
 \pagebreak
 \begin{figure}[H]
     \centering
-    \includegraphics[width=163mm]{resources/tubing.png}
-    \caption{Dimensions of Tubing from Pump to Bottle}
+    \includegraphics[width=135mm]{resources/tubing-bottle-to-bottle.png}
+    \caption{Dimensions of Tubing from Bottle to Bottle to Bottle}
 \end{figure}
 
 \section{Subsystem Interfaces}
 
 % Explain the interfaces with the other subsystems: describe each interface and how your design
 % addresses each. Reference a figure or a table.
-There are two main interfaces between the water delivery system and the other subsystems:
+There are two interfaces between the water delivery system and the other subsystems:
 
 \begin{enumerate}
     \item The connections to the four reservoirs in the reservoir system.
@@ -175,17 +186,17 @@ There are two main interfaces between the water delivery system and the other su
 % Reservoir
 The interface with the reservoir is twofold. First, the tubing of the water delivery subsystem
 attaches to the pump in the reservoir. The tubing also passes through a hole cut in the ceiling of
-the reservoir. To ensure that the pump and tubing interface well with one another,
+the reservoir. To ensure that the pump and tubing are compatible with one another,
 $\nicefrac{1}{2}''$ tubing is being used. Additionally, the ceiling of the reservoir will have a
 $\nicefrac{1}{2}''$ hole allowing the tube to pass through.
 
 % Bottle connection
 The interface with the bottle consists of a bulkhead fitting, the $\nicefrac{1}{2}''$ tubing and the
-bottle itself. Figure 3 shows this interface. The bulkhead fitting has two parts: the bulkhead
+bottle itself. Figure 4 shows this interface. The bulkhead fitting has two parts: the bulkhead
 body and the bulkhead lock nut. The bulkhead body and the threads are one piece and fit through a
-hole in the soda bottle created using the bottle creating tool designed for the hydroponic bottle
+hole in the soda bottle created using the bottle creation tool designed for the hydroponic bottle
 system. The bulkhead lock nut is threaded and, once tightened, seals the gap between the bulkhead
-body and the soda bottle. The threads of the bulkhead body also holds the tubing in place.
+body and the soda bottle. The threads of the bulkhead body also hold the tubing in place.
 
 \begin{figure}[H]
     \centering
@@ -195,19 +206,36 @@ body and the soda bottle. The threads of the bulkhead body also holds the tubing
 
 \section{Subsystem Analysis}
 
-% - Validation that it will work. If tested, what was the design of your experiment/test, and what
-%   was the result?  If not tested, prove through research and analysis that your concept will
-%   function as planned.
+% Validation that it will work. If tested, what was the design of your experiment/test, and what was
+% the result? If not tested, prove through research and analysis that your concept will function as
+% planned.
 
 The water delivery subsystem is critical to the overall success of the team's system. Because of
-this, extensive testing is required to ensure that the subsystem works. The four 
+this, extensive testing is required to ensure that the subsystem works. The following is a list of
+the tests for the water delivery subsystem that have been identified by the team:
 
-Because the seal between the tubing and the bottle is critical to the overall success of the team's
-system, 
+\begin{enumerate}
 
+    \item \textbf{Test Pump Head:} The pump must have enough head to raise the water from the
+        reservoir to the level of the topmost bottle. The team has tested the head of two pumps, the
+        \textit{Eco66 Submersible Pump 75 GPH} and the \textit{Pondmaster 35 GPH Magnetic Drive
+        Utility Pump}. Unfortunately, both pumps had insufficient head. To solve this problem, the
+        team will find a pump with more head and/or use a smaller diameter tubing.
 
+    \item \textbf{Test Bottle Connections:} The tubing must fit properly onto the bulkhead fitting
+        and the bulkhead fitting must sufficiently seal the hole in the bottle.
+
+    \item \textbf{Test Amount of Pump Time Required to Maintain Sufficient Level of Water:} It is
+        important that the wicking material (designed in the Hydroponic Bottle Subsystem) never
+        becomes dry. This would occur if it ran out of water, thus the water in the hydroponic soda
+        bottles needs to be replenished periodically.
+        % TODO: CITE HERE MAYBE?
+
+\end{enumerate}
 
 \section{Summary}
+
+
 
 % THIS SHOULD BE THE FOCUS
 % - Given your research, stakeholder feedback and/or testing, what are your recommendations for
