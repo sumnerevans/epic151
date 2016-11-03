@@ -106,7 +106,6 @@
 % - Do a search for stakeholder
 % - Do a search for subsystem
 % - Three citations (1 done)
-% - Three figures (2 done)
 
 \section{Subsystem Description}
 
@@ -148,12 +147,12 @@ $\nicefrac{1}{2}"$ tubing will be used. This diameter was chosen for two reasons
 
 % Physical properties, including dimensions, material type, specifications, weight, and
 % construction.
-% Include sketches with dimensions instead of long physical descriptions.
 
 The tubing in the final product will be black to reduce the water's exposure to light. Exposure to
 light causes algae growth \cite{doe-washington} and since one of the system's requirements is that
 algae growth is prevented, this precaution is necessary.
 
+% Include sketches with dimensions instead of long physical descriptions.
 As shown in Figure 2, there is a total of $3'$ of tubing between the pump and the uppermost bottle.
 $7\ \nicefrac{3}{4}''$ of the tubing is inside the reservoir and $2'\ 4\ \nicefrac{1}{4}''$ is
 outside the reservoir. Figure 3 shows that there is a total of $1\ \nicefrac{1}{2}'$ of tubing
@@ -188,15 +187,17 @@ The interface with the reservoir is twofold. First, the tubing of the water deli
 attaches to the pump in the reservoir. The tubing also passes through a hole cut in the ceiling of
 the reservoir. To ensure that the pump and tubing are compatible with one another,
 $\nicefrac{1}{2}''$ tubing is being used. Additionally, the ceiling of the reservoir will have a
-$\nicefrac{1}{2}''$ hole allowing the tube to pass through.
+$\nicefrac{1}{2}''$ hole allowing the tube to pass through. This arrangement will allow the
+stakeholder to lift lid of the reservoir without having to disconnect any tubing.
 
 % Bottle connection
 The interface with the bottle consists of a bulkhead fitting, the $\nicefrac{1}{2}''$ tubing and the
 bottle itself. Figure 4 shows this interface. The bulkhead fitting has two parts: the bulkhead
-body and the bulkhead lock nut. The bulkhead body and the threads are one piece and fit through a
+body and the bulkhead locknut. The bulkhead body and the threads are one piece and fit through a
 hole in the soda bottle created using the bottle creation tool designed for the hydroponic bottle
-system. The bulkhead lock nut is threaded and, once tightened, seals the gap between the bulkhead
-body and the soda bottle. The threads of the bulkhead body also hold the tubing in place.
+system. The bulkhead locknut is threaded and, once tightened, seals the gap between the bulkhead
+body and the soda bottle \cite{uspc}. The threads of the bulkhead body also hold the tubing in
+place.
 
 \begin{figure}[H]
     \centering
@@ -218,12 +219,14 @@ the tests for the water delivery subsystem that have been identified by the team
 
     \item \textbf{Test Pump Head:} The pump must have enough head to raise the water from the
         reservoir to the level of the topmost bottle. The team has tested the head of two pumps, the
-        \textit{Eco66 Submersible Pump 75 GPH} and the \textit{Pondmaster 35 GPH Magnetic Drive
-        Utility Pump}. Unfortunately, both pumps had insufficient head. To solve this problem, the
-        team will find a pump with more head and/or use a smaller diameter tubing.
+        \textit{Pondmaster 35 GPH Magnetic Drive Utility Pump} and the
+        \textit{EcoPlus\supscr{\textregistered} Eco 66 Bottom Draw 75 GPH}. Unfortunately, both
+        pumps had insufficient head. The \textit{Pondmaster} brand pump was only able to raise the
+        water about $1'\ 6''$. The team then tested the The \textit{EcoPlus\supscr{\textregistered}}
+        brand pump which performed better and was still only able to raise water about $2'\ 6''$.
 
     \item \textbf{Test Bottle Connections:} The tubing must fit properly onto the bulkhead fitting
-        and the bulkhead fitting must sufficiently seal the hole in the bottle.
+        and the bulkhead fitting must seal the hole in the bottle.
 
     \item \textbf{Test Amount of Pump Time Required to Maintain Sufficient Level of Water:} It is
         important that the wicking material (designed in the Hydroponic Bottle Subsystem) never
@@ -235,11 +238,35 @@ the tests for the water delivery subsystem that have been identified by the team
 
 \section{Summary}
 
+% Given your research, stakeholder feedback and/or testing, what are your recommendations for
+% design iterations and design implementation into the final, full-scale, production solution?
 
+% Testing
+After testing the \textit{Pondmaster} brand pump the team assumed that doubling the GPH would double
+the head. This assumption was disproved after testing the \textit{EcoPlus\supscr{\textregistered}}
+which had over twice the GPH of the \textit{Pondmaster} pump. The team then considered other ways to
+increase the head of the pumps that they already had. One idea was to decrease the diameter of the
+tubing, increasing pressure in the tube and hopefully pushing the water higher. The team has not
+started testing this idea.
 
-% THIS SHOULD BE THE FOCUS
-% - Given your research, stakeholder feedback and/or testing, what are your recommendations for
-%   design iterations and design implementation into the final, full-scale, production solution?
+If decreasing the tube diameter does not increase the head, the team will find a different pump with
+more head. Although finding such a pump is critical to the final design, other testing can occur
+before a pump is found.
+
+The connection from the tubing to the bottles is critical to the overall success of the solution and
+thus is the most critical test for the water delivery subsystem. Because of this, these connections
+will be tested by November 10, 2016. In the case that the bulkhead fittings do not seal the holes in
+the bottle well enough, other options such as trying to utilize the built-in threads on the soda
+bottle may be considered.
+
+In the final product, all of the fittings will, in addition to being watertight, need to be easily
+to install so that the stakeholder can create the bottle with limited technical knowledge. Because
+of this, the team will test for leakage by performing a stress test. This stress test involves
+turning the pump on for 12 hours and measuring any leakage through the bulkhead fittings.
+
+In summary, the water delivery subsystem is essential to the functionality of the overall system and
+requires extensive testing to ensure that it works properly and interfaces correctly with the other
+subsystems.
 
 \pagebreak
 
@@ -248,14 +275,14 @@ the tests for the water delivery subsystem that have been identified by the team
     Centers for Disease Control and Prevention (2012).
     \textit{A Look Inside Food Deserts} [Online].
     Available: \url{http://www.cdc.gov/features/FoodDeserts/index.html}.
-    [Accessed 11 Sept. 2016].
+    [Accessed Sept. 11, 2016].
 
     \bibitem{usda-food-deserts}
     United States Department of Agriculture Economic Research Service (19 Oct. 2016).
     \textit{Food Access Research Atlas} [Online].
     Available:
     \url{http://www.ers.usda.gov/data-products/food-access-research-atlas/go-to-the-atlas.aspx}.
-    [Accessed: 28 Oct. 2016].
+    [Accessed: Oct. 28, 2016].
 
     \bibitem{j-camas}
     J. Camas (04 Sept. 2014).
@@ -269,6 +296,12 @@ the tests for the water delivery subsystem that have been identified by the team
     \textit{Algae Information} [Online].
     Available: \url{http://www.ecy.wa.gov/programs/wq/plants/algae/lakes/AlgaeInformation.html}.
     [Accessed: Oct. 19, 2016].
+
+    \bibitem{uspc}
+    United States Plastic Corp (2008).
+    \textit{How does a bulkhead fitting work?} [Online].
+    Available: \url{http://www.usplastic.com/knowledgebase/article.aspx?contentkey=437}
+    [Accessed: Nov. 3, 2016].
 
 \end{thebibliography}
 
