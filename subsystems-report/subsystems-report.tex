@@ -18,7 +18,7 @@
 \hyphenpenalty=10000
 \hbadness=10000
 \MakeOuterQuote{"}
-\renewcommand{\baselinestretch}{1.15}
+\renewcommand{\baselinestretch}{1.2}
 \setlength\parindent{0.5in}
 \setlength\RaggedRightParindent{\parindent}
 \setlength\parskip{1em}
@@ -102,8 +102,6 @@
 }
 
 % ===== TODO =====
-% - Check that the figure numbers are correct
-% - Do a search for stakeholder
 % - Do a search for subsystem
 % - Three citations (1 done)
 
@@ -125,23 +123,23 @@ maintain the water level in each bottle. Because of this, the design requires th
 timer which allows the water to run for a few minutes every hour. This solution decreases the
 environmental footprint of the system and also reduces operating costs for the stakeholder.
 Additionally, if there is a power outage and the pumps stop operating for a period of time, the
-system will remain stable until the water in the individual bottles runs out.
+system will remain stable unless the water in the individual bottles runs out.
 
-Because many of the water delivery system's components are interfaces with other subsystems, the
-only component of the design specific to the water deliver system is the tubing. The tubing carries
-water and nutrients from each of the four reservoirs to the uppermost bottle. The tubing also
-carries water from one bottle to the next in each column until the water drains out of the lowest
-bottle in the column and back into the reservoir through another tube. In the final design,
-$\nicefrac{1}{2}"$ tubing will be used. This diameter was chosen for two reasons:
+Many of the water delivery system's components are interfaces with other subsystems. The only
+component of the design specific to the water deliver system is the tubing. The tubing carries water
+and nutrients from each of the four reservoirs to the uppermost bottle. The tubing also carries
+water from one bottle to the next in each column until the water drains out of the lowest bottle in
+the column and back into the reservoir through another tube. In the final design, $\nicefrac{1}{2}"$
+tubing will be used. This diameter was chosen for two reasons:
 
 \begin{enumerate}
 
-    \item The fittings on the pumps that the team is considering are $\nicefrac{1}{2}''$ fittings.
+    \item The pumps that the team is considering have $\nicefrac{1}{2}''$ fittings.
 
     \item There are many options for $\nicefrac{1}{2}''$ bulkheads on the market. From my online
-        searches, $\nicefrac{1}{4}"$ bulkheads are less common. These bulkheads are the primary
+        searches, $\nicefrac{1}{4}''$ bulkheads are less common. These bulkheads are the primary
         interface point between the water delivery system and the hydroponic bottles (see Subsystem
-        Interfaces for more details).
+        Interfaces for details).
 
 \end{enumerate}
 
@@ -160,7 +158,7 @@ between each bottle: $\nicefrac{1}{2}'$ horizontally and $1'$ vertically.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=163mm]{resources/tubing-pump-to-bottle.png}
+    \includegraphics[width=145mm]{resources/tubing-pump-to-bottle.png}
     \caption{Dimensions of Tubing from Pump to Bottle}
 \end{figure}
 
@@ -175,10 +173,10 @@ between each bottle: $\nicefrac{1}{2}'$ horizontally and $1'$ vertically.
 
 % Explain the interfaces with the other subsystems: describe each interface and how your design
 % addresses each. Reference a figure or a table.
-There are two interfaces between the water delivery system and the other subsystems:
+There are two interfaces between the water delivery subsystem and other subsystems:
 
 \begin{enumerate}
-    \item The connections to the four reservoirs in the reservoir system.
+    \item The connections to the four reservoirs in the reservoir subsystem.
     \item The connections to and from the twelve hydroponic bottles.
 \end{enumerate}
 
@@ -186,16 +184,16 @@ There are two interfaces between the water delivery system and the other subsyst
 The interface with the reservoir is twofold. First, the tubing of the water delivery subsystem
 attaches to the pump in the reservoir. The tubing also passes through a hole cut in the ceiling of
 the reservoir. To ensure that the pump and tubing are compatible with one another,
-$\nicefrac{1}{2}''$ tubing is being used. Additionally, the ceiling of the reservoir will have a
-$\nicefrac{1}{2}''$ hole allowing the tube to pass through. This arrangement will allow the
-stakeholder to lift lid of the reservoir without having to disconnect any tubing.
+$\nicefrac{1}{2}''$ tubing is being used. Additionally, the ceiling of the reservoir has a
+$\nicefrac{1}{2}''$ hole allowing the tube to pass through. This arrangement allows the stakeholder
+to lift lid of the reservoir without having to disconnect any tubing.
 
 % Bottle connection
 The interface with the bottle consists of a bulkhead fitting, the $\nicefrac{1}{2}''$ tubing and the
 bottle itself. Figure 4 shows this interface. The bulkhead fitting has two parts: the bulkhead
 body and the bulkhead locknut. The bulkhead body and the threads are one piece and fit through a
 hole in the soda bottle created using the bottle creation tool designed for the hydroponic bottle
-system. The bulkhead locknut is threaded and, once tightened, seals the gap between the bulkhead
+subsystem. The bulkhead locknut is threaded and, once tightened, seals the gap between the bulkhead
 body and the soda bottle \cite{uspc}. The threads of the bulkhead body also hold the tubing in
 place.
 
@@ -217,22 +215,22 @@ the tests for the water delivery subsystem that have been identified by the team
 
 \begin{enumerate}
 
-    \item \textbf{Test Pump Head:} The pump must have enough head to raise the water from the
+    \item \textbf{Pump Head:} The pump must have enough head to raise the water from the
         reservoir to the level of the topmost bottle. The team has tested the head of two pumps, the
         \textit{Pondmaster 35 GPH Magnetic Drive Utility Pump} and the
         \textit{EcoPlus\supscr{\textregistered} Eco 66 Bottom Draw 75 GPH}. Unfortunately, both
         pumps had insufficient head. The \textit{Pondmaster} brand pump was only able to raise the
         water about $1'\ 6''$. The team then tested the The \textit{EcoPlus\supscr{\textregistered}}
-        brand pump which performed better and was still only able to raise water about $2'\ 6''$.
+        brand pump which performed better but was still only able to raise water about $2'\ 6''$.
 
-    \item \textbf{Test Bottle Connections:} The tubing must fit properly onto the bulkhead fitting
+    \item \textbf{Bottle Connections:} The tubing must fit properly onto the bulkhead fitting
         and the bulkhead fitting must seal the hole in the bottle.
 
-    \item \textbf{Test Amount of Pump Time Required to Maintain Sufficient Level of Water:} It is
-        important that the wicking material (designed in the Hydroponic Bottle Subsystem) never
-        becomes dry. This would occur if it ran out of water, thus the water in the hydroponic soda
-        bottles needs to be replenished periodically.
-        % TODO: CITE HERE MAYBE?
+    \item \textbf{Amount of Pump Time Required to Maintain Sufficient Level of Water:} It is
+        important that the wicking material (designed as part of the Hydroponic Bottle Subsystem)
+        never becomes dry \cite{kaiser-and-erns}. This would occur if the water in the bottom of the
+        bottle runs out, thus the water in the hydroponic soda bottles needs to be replenished
+        periodically.
 
 \end{enumerate}
 
@@ -250,8 +248,9 @@ tubing, increasing pressure in the tube and hopefully pushing the water higher. 
 started testing this idea.
 
 If decreasing the tube diameter does not increase the head, the team will find a different pump with
-more head. Although finding such a pump is critical to the final design, other testing can occur
-before a pump is found.
+more head. Since the pumps that the team has tested to date are some of the weakest pumps on the
+market, finding a pump with sufficient head should not be an issue. Although finding a suitable pump
+is critical to the final design, other testing can occur before a pump is found.
 
 The connection from the tubing to the bottles is critical to the overall success of the solution and
 thus is the most critical test for the water delivery subsystem. Because of this, these connections
@@ -259,14 +258,17 @@ will be tested by November 10, 2016. In the case that the bulkhead fittings do n
 the bottle well enough, other options such as trying to utilize the built-in threads on the soda
 bottle may be considered.
 
-In the final product, all of the fittings will, in addition to being watertight, need to be easily
+In the final product, all of the fittings will, in addition to being watertight, need to be easy
 to install so that the stakeholder can create the bottle with limited technical knowledge. Because
 of this, the team will test for leakage by performing a stress test. This stress test involves
-turning the pump on for 12 hours and measuring any leakage through the bulkhead fittings.
+turning the pump on for 12 hours and measuring any leakage through the bulkhead fittings. From
+previous testing, the team has found that installing bulkhead fittings is relatively easy and can be
+done without much technical knowledge.
 
-In summary, the water delivery subsystem is essential to the functionality of the overall system and
-requires extensive testing to ensure that it works properly and interfaces correctly with the other
-subsystems.
+In summary, the water delivery subsystem is essential to the functionality of the overall system.
+Although the team's research and testing to-date has indicated that this subsystem is viable, the
+water delivery subsystem will require extensive testing to ensure that it interfaces correctly with
+the other subsystems.
 
 \pagebreak
 
@@ -300,8 +302,15 @@ subsystems.
     \bibitem{uspc}
     United States Plastic Corp (2008).
     \textit{How does a bulkhead fitting work?} [Online].
-    Available: \url{http://www.usplastic.com/knowledgebase/article.aspx?contentkey=437}
+    Available: \url{http://www.usplastic.com/knowledgebase/article.aspx?contentkey=437}.
     [Accessed: Nov. 3, 2016].
+
+    \bibitem{kaiser-and-erns}
+    Cheryl Kaiser and Matt Erns.
+    University of Kentucky College of Agriculture, Food and Environment (2012).
+    \textit{Hydroponic Lettuce} [PDF].
+    Available: \url{http://www.uky.edu/Ag/NewCrops/introsheets/hydrolettuce.pdf}.
+    [Accessed: Nov. 03, 2016]
 
 \end{thebibliography}
 
